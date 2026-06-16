@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    verflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .main {
