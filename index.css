@@ -502,6 +502,9 @@ footer .span{
     }
 }
 @media screen and (max-width:530px){
+    .main{
+        bakcground-size: cover;
+    }
     .get{
         flex-direction: column;
         gap: 9px;
