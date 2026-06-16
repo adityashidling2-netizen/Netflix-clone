@@ -403,7 +403,7 @@ footer .span{
 }
 @media screen and (max-width:1240px){
     .main{   
-        background-size: contain;
+        background-size: max(1300px, 100vw);
         background-position: center center;
         height: 60vh;
     }
