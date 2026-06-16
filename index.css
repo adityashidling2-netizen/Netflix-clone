@@ -109,14 +109,14 @@ select {
     border-radius: 4px;
 }
 
-#grey {
+.grey {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     color:white;
     filter: opacity(1);
 }
 
-#button{
+.button{
     background-color: red;
     border: none;
     color:white;
