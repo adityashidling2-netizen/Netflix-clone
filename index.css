@@ -402,8 +402,7 @@ footer .span{
     gap: 23px;
 }
 @media screen and (max-width:1240px){
-    .main{
-        
+    .main{   
         height: 60vh;
     }
     .main .block{
@@ -485,12 +484,12 @@ footer .span{
         justify-content: end;
     }
     .get input{
-        width: 60vw;
+        width: 40vw;
         font-size: 10px;
     }
     .get button{
-        font-size: 12px;
-        width: 30vw;
+        font-size: 8px;
+        width: 20vw;
     }
     footer{
         width: 90%;
