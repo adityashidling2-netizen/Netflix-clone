@@ -199,6 +199,7 @@ select {
 .item1 {
     background-image: url(card1.jpg);
     margin: 10px;
+    
 }
 
 .item2 {
@@ -336,7 +337,7 @@ select {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    transition: all 0.8s ease-out 0.1s;
+    transition: all 0.4s ease-out 0.1s;
 }
 
 .faq-box:hover{
@@ -378,7 +379,7 @@ select {
 }
 footer{
     color: white;
-    max-width: 70vw;
+    max-width: 70%;
     margin: auto;
     padding: 14px;
 }
@@ -400,13 +401,21 @@ footer .span{
     flex-direction: column;
     gap: 23px;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1240px){
+    .main{
+        height: 60vh;
+    }
+    .main .block{
+        height: 60vh;
+    }
     .nav{
+        margin: 9px 0;
         max-width: 90vw;
     }
     nav img{
         width: 95px;
     }
+    
     .second> :nth-child(1){
         font-size: 20px;
         line-height: 20px;
@@ -421,8 +430,27 @@ footer .span{
         font-size: 14px;
         line-height: 12px;
     }
+    .second input{
+        margin: 8px 0;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .second button{
+        font-size: 12px;
+        font-weight: 300;
+        padding: 4px 8px;
+    }
 
-
+    .card{
+        width: 90%;
+    }
+    .cards{
+        height: 180px;
+        width: 140px;
+    }
+    .reason{
+        width: 90%;
+    }
     .submain{
         width: 100%;
         flex-wrap: wrap;
@@ -432,17 +460,30 @@ footer .span{
         font-size: 16px;
     }
 
+    .faq{
+        width: 90%;
+    }
     .faq-box{
         font-size: 14px;
         padding: 16px;
+    }
+    .end{
+        width: 90%;
     }
     .get{
         flex-direction: column;
         justify-content: end;
     }
     .get input{
-        width: 50vw;
+        width: 60vw;
+        font-size: 10px;
+    }
+    .get button{
         font-size: 12px;
+        width: 30vw;
+    }
+    footer{
+        width: 90%;
     }
     .footer{
         grid-template-columns: 1fr 1fr;
