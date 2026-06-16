@@ -141,7 +141,7 @@ select {
 .card {
     color: white;
     margin: 4px auto;
-    width: 70%;
+    width: 80%;
     padding: 40px;
     gap: 2px;
 }
@@ -271,7 +271,7 @@ select {
 }
 
 .reason {
-    width: 70%;
+    width: 80%;
     height: auto;
     color: white;
     margin: 4px auto;
@@ -320,7 +320,7 @@ select {
 
 .faq{
     color: white;
-    width: 70%;
+    width: 80%;
     margin: 9px auto;
     gap: 10px;
 }
@@ -344,7 +344,7 @@ select {
     background-color: rgb(70, 69, 69);
 }
 .end{
-    width: 70%;
+    width: 80%;
     color:white;
     margin: auto;
     box-sizing: border-box;
@@ -379,7 +379,7 @@ select {
 }
 footer{
     color: white;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     padding: 14px;
 }
@@ -502,10 +502,6 @@ footer .span{
     }
 }
 @media screen and (max-width:530px){
-    .main{
-        background-size:cover;
-        
-    }
     .get{
         flex-direction: column;
         gap: 9px;
