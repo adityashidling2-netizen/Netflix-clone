@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 80vh;
+    background-image: url(backgroundlogo.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    opacity: 0.79;
+}
+
+nav {
+    max-width: 84vw;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img {
+    width: 118px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+    z-index: 20;
+}
+
+nav button,
+select {
+    position: relative;
+    z-index: 20;
+}
+.nav select{
+   padding: 4px 10px;
+   /* width: 8vw; */
+   text-align: left;
+   border-radius: 4px;
+
+}
+.nav button{
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+.second {
+    font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    gap: 18px;
+    padding: 0 23px;
+}
+
+.second> :nth-child(1) {
+    line-height: 70px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.second> :nth-child(2) {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.second> :nth-child(3) {
+    line-height: 10px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    
+}
+
+.start input{
+    padding: 9px 65px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.start button{
+    padding: 9px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+#grey {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color:white;
+    filter: opacity(1);
+}
+
+#button{
+    background-color: red;
+    border: none;
+    color:white;
+    font-weight: bold;
+}
+.separate {
+    box-sizing: border-box;
+    /* position: absolute; */
+    /* top: 0; */
+    overflow: hidden;
+    border-bottom: none;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    height: 2px;
+    margin: auto;
+    background-color: red;
+    line-height: 0;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-clip: padding-box;
+
+}
+
+.card {
+    color: white;
+    margin: 4px auto;
+    width: 70%;
+    padding: 40px;
+    gap: 2px;
+}
+
+.card h4 {
+
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.row {
+    display: flex;
+    width: 90%;
+    gap: 30px;
+    margin: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+    /* hide scrollbar Chrome */
+}
+
+.cards {
+    height: 220px;
+    width: 180px;
+    background-color: black;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: ease 0.2s;
+
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.card-item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    flex-shrink: 0;
+    padding: 6px;
+    /* prevent cards from squishing */
+}
+
+.item1 {
+    background-image: url(card1.jpg);
+    margin: 10px;
+}
+
+.item2 {
+    background-image: url(card2.jpg);
+
+}
+
+.item3 {
+    background-image: url(card3.jpg);
+
+}
+
+.item4 {
+    background-image: url(card4.jpg);
+}
+
+.item5 {
+    background-image: url(card5.jpg);
+}
+
+.item6 {
+    background-image: url(card6.jpg);
+}
+
+.num {
+    font-size: 44px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 3px #555;
+    /* outline effect */
+    line-height: 1;
+    margin-right: -30px;
+    /* overlap with card */
+    z-index: 1;
+    user-select: none;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.sidebar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 260px;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.sidebar button {
+    margin: auto 8px;
+    width: 18px;
+    height: 80px;
+    border: none;
+    border-radius: 9px;
+    align-items: center;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    position: sticky;
+    right: 0;
+    font-size: 30px;
+    font-weight: 400;
+    transition: opacity 0.1s ease 0.2s;
+}
+
+.sidebar button:hover {
+    background-color: rgb(70, 69, 69);
+}
+
+.reason {
+    width: 70%;
+    height: auto;
+    color: white;
+    margin: 4px auto;
+
+}
+.reason h4{
+    font-weight: 900;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.submain {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    margin: 4px auto;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    gap: 10px;
+}
+
+.submain .card {
+    width: 100%;
+    height: 205px;
+    background: linear-gradient(135deg,
+            #1c1933 0%,
+            #1d162c 50%,
+            #230f1f 100%);
+    padding: 13px;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.submain #heading {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.submain #para {
+    font-size: 13px;
+    font-weight: 350;
+}
+
+.faq{
+    color: white;
+    width: 70%;
+    margin: 9px auto;
+    gap: 10px;
+}
+.faq h4{
+    font-weight: 900;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.faq-box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(46, 46, 46);
+    padding: 20px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.8s ease-out 0.1s;
+}
+
+.faq-box:hover{
+    background-color: rgb(70, 69, 69);
+}
+.end{
+    width: 70%;
+    color:white;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.end span{
+    font-size: 14px;
+}
+.end .get{
+    gap: 5px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.get input{
+    width: 40%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.get button{
+    padding: 7px 10px;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 4px;
+}
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .span{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 20px;
+}
+.footer a{
+    color: white;
+    font-size: 12px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+@media screen and (max-width:1000px){
+    .nav{
+        max-width: 90vw;
+    }
+    nav img{
+        width: 95px;
+    }
+    .second> :nth-child(1){
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 1000;
+    }
+    .second> :nth-child(2){
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .second> :nth-child(3){
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+
+    .submain{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    .faq-box{
+        font-size: 14px;
+        padding: 16px;
+    }
+    .get{
+        flex-direction: column;
+        justify-content: end;
+    }
+    .get input{
+        width: 50vw;
+        font-size: 12px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-item{
+        gap: 9px;
+    }
+}
+@media screen and (max-width:530px){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    
+}
