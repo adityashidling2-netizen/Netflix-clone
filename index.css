@@ -404,10 +404,11 @@ footer .span{
 }
 @media screen and (max-width:1240px){
     .main{   
-        height: 60vh;
+        background-size: max(1400px, 100vw);
+        height: 80vh;
     }
     .main .block{
-        height: 60vh;
+        height: 80vh;
     }
     nav{
         margin-top: 1px 0;
