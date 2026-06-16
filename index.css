@@ -403,12 +403,12 @@ footer .span{
 }
 @media screen and (max-width:1240px){
     .main{   
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
-        height: 100vh;
+        height: 60vh;
     }
     .main .block{
-        height: 100vh;
+        height: 60vh;
     }
     nav{
         margin-top: 1px 0;
@@ -437,13 +437,13 @@ footer .span{
     }
     .second input{
         margin: 8px 0;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 400;
         padding: 4px;
         width: 30vw;
     }
     .second button{
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 300;
         padding: 4px 8px;
     }
@@ -487,11 +487,10 @@ footer .span{
     }
     .get input{
         width: 40vw;
-        font-size: 10px;
+        font-size: 16px;
     }
     .get button{
-        font-size: 8px;
-        width: 20vw;
+        font-size: 16px;
     }
     footer{
         width: 90%;
